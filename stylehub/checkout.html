@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout — StyleHub</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="logo">Style<span>Hub</span></a>
+    <nav class="nav-links"><a href="cart.html">← Back to Cart</a></nav>
+    <div class="nav-actions"><a href="cart.html" class="nav-icon">🛍<span class="nav-badge js-cart-count">0</span></a></div>
+  </div>
+</header>
+
+<div class="page-banner"><div class="container"><h1>Checkout</h1></div></div>
+
+<section class="section container">
+  <div class="checkout-steps">
+    <div class="checkout-step done">1. Cart</div>
+    <div class="checkout-step active">2. Shipping & Payment</div>
+    <div class="checkout-step">3. Confirmation</div>
+  </div>
+
+  <div id="checkout-content"></div>
+</section>
+
+<footer class="footer"><div class="container"><div class="footer-bottom">© 2026 StyleHub. All rights reserved. Built as a web development internship project.</div></div></footer>
+
+<script src="js/data.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+<script src="js/checkout.js"></script>
+</body>
+</html>

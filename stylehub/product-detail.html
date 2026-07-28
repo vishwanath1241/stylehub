@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Details — StyleHub</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="topbar"><div class="container"><span>Free shipping on orders above ₹1999</span><span>Need help? <a href="contact.html">Contact Us</a></span></div></div>
+
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="logo">Style<span>Hub</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="products.html?category=men">Men</a>
+      <a href="products.html?category=women">Women</a>
+      <a href="products.html?category=kids">Kids</a>
+      <a href="products.html">All Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <form class="search-box js-search-form"><span>🔍</span><input type="text" placeholder="Search for products..."></form>
+    <div class="nav-actions">
+      <a href="account.html?tab=wishlist" class="nav-icon">♡<span class="nav-badge js-wishlist-count">0</span></a>
+      <a href="cart.html" class="nav-icon">🛍<span class="nav-badge js-cart-count">0</span></a>
+      <a href="account.html" class="nav-icon">👤</a>
+    </div>
+  </div>
+</header>
+
+<div class="container" style="padding-top:20px;">
+  <div class="breadcrumb"><a href="index.html">Home</a> / <a href="products.html" id="crumb-cat">Products</a> / <span id="crumb-name">Product</span></div>
+</div>
+
+<section class="section container" id="pd-root">
+  <!-- filled by JS -->
+</section>
+
+<section class="section container" style="padding-top:0;">
+  <div class="section-header"><div class="section-eyebrow">You May Also Like</div><h2>Related Products</h2></div>
+  <div class="product-grid" id="related-grid"></div>
+</section>
+
+<footer class="footer">
+  <div class="container"><div class="footer-bottom">© 2026 StyleHub. All rights reserved. Built as a web development internship project.</div></div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+<script src="js/product-detail.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop All Products — StyleHub</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="topbar"><div class="container"><span>Free shipping on orders above ₹1999</span><span>Need help? <a href="contact.html">Contact Us</a></span></div></div>
+
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="logo">Style<span>Hub</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="products.html?category=men">Men</a>
+      <a href="products.html?category=women">Women</a>
+      <a href="products.html?category=kids">Kids</a>
+      <a href="products.html" class="active">All Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <form class="search-box js-search-form"><span>🔍</span><input type="text" placeholder="Search for products..." id="search-input"></form>
+    <div class="nav-actions">
+      <a href="account.html?tab=wishlist" class="nav-icon">♡<span class="nav-badge js-wishlist-count">0</span></a>
+      <a href="cart.html" class="nav-icon">🛍<span class="nav-badge js-cart-count">0</span></a>
+      <a href="account.html" class="nav-icon">👤</a>
+    </div>
+  </div>
+</header>
+
+<div class="page-banner">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / <span id="crumb">All Products</span></div>
+    <h1 id="page-title">All Products</h1>
+  </div>
+</div>
+
+<section class="section container">
+  <div class="listing-layout">
+    <!-- FILTERS -->
+    <aside class="filter-panel">
+      <div class="flex-between" style="margin-bottom:18px;">
+        <h4 style="margin:0;">Filters</h4>
+        <a href="products.html" style="font-size:.78rem; color:var(--pink);">Clear all</a>
+      </div>
+
+      <div class="filter-group">
+        <h4>Category</h4>
+        <label class="filter-option"><input type="radio" name="category" value="" > All</label>
+        <label class="filter-option"><input type="radio" name="category" value="men"> Men</label>
+        <label class="filter-option"><input type="radio" name="category" value="women"> Women</label>
+        <label class="filter-option"><input type="radio" name="category" value="kids"> Kids</label>
+      </div>
+
+      <div class="filter-group">
+        <h4>Brand</h4>
+        <div id="brand-filters"></div>
+      </div>
+
+      <div class="filter-group">
+        <h4>Size</h4>
+        <div class="size-row" id="size-filters"></div>
+      </div>
+
+      <div class="filter-group">
+        <h4>Color</h4>
+        <div class="swatch-row" id="color-filters"></div>
+      </div>
+
+      <div class="filter-group">
+        <h4>Price Range</h4>
+        <input type="range" id="price-range" min="0" max="9000" step="100" style="width:100%; accent-color:var(--pink);">
+        <div class="flex-between" style="font-size:.8rem; color:var(--gray);">
+          <span>₹0</span><span id="price-val">Up to ₹9000</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- RESULTS -->
+    <div>
+      <div class="listing-toolbar">
+        <span id="result-count" style="color:var(--gray); font-size:.9rem;"></span>
+        <select id="sort-select">
+          <option value="featured">Sort: Featured</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+          <option value="rating">Highest Rated</option>
+          <option value="newest">Newest</option>
+        </select>
+      </div>
+      <div class="product-grid" id="product-grid"></div>
+      <div id="no-results" class="empty-state" style="display:none;">
+        <div class="icon">🔍</div>
+        <h3>No products match your filters</h3>
+        <p>Try clearing a few filters or search for something else.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom">© 2026 StyleHub. All rights reserved. Built as a web development internship project.</div>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+<script src="js/products-page.js"></script>
+</body>
+</html>

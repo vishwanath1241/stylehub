@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Account — StyleHub</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="topbar"><div class="container"><span>Free shipping on orders above ₹1999</span><span>Need help? <a href="contact.html">Contact Us</a></span></div></div>
+
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="logo">Style<span>Hub</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="products.html?category=men">Men</a>
+      <a href="products.html?category=women">Women</a>
+      <a href="products.html?category=kids">Kids</a>
+      <a href="products.html">All Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <form class="search-box js-search-form"><span>🔍</span><input type="text" placeholder="Search for products..."></form>
+    <div class="nav-actions">
+      <a href="account.html?tab=wishlist" class="nav-icon">♡<span class="nav-badge js-wishlist-count">0</span></a>
+      <a href="cart.html" class="nav-icon">🛍<span class="nav-badge js-cart-count">0</span></a>
+      <a href="account.html" class="nav-icon">👤</a>
+    </div>
+  </div>
+</header>
+
+<div class="page-banner"><div class="container"><h1>My Account</h1></div></div>
+
+<section class="section container" id="logged-out-view" style="display:none;">
+  <div class="empty-state">
+    <div class="icon">👤</div>
+    <h3>You're not logged in</h3>
+    <p style="color:var(--gray); margin-bottom:24px;">Log in to view your orders, wishlist and saved addresses.</p>
+    <a href="login.html?next=account.html" class="btn btn-primary">Login / Register</a>
+  </div>
+</section>
+
+<section class="section container" id="logged-in-view">
+  <div class="account-layout">
+    <nav class="account-nav">
+      <a href="#" data-tab="profile" class="active">Profile</a>
+      <a href="#" data-tab="orders">Order History</a>
+      <a href="#" data-tab="addresses">Saved Addresses</a>
+      <a href="#" data-tab="wishlist">Wishlist</a>
+      <a href="#" data-tab="preferences">Size Preferences</a>
+      <a href="#" id="logout-link">Logout</a>
+    </nav>
+
+    <div>
+      <div class="account-panel active" id="panel-profile">
+        <h3>Profile</h3>
+        <div id="profile-info"></div>
+      </div>
+
+      <div class="account-panel" id="panel-orders">
+        <h3>Order History</h3>
+        <div id="orders-list"></div>
+      </div>
+
+      <div class="account-panel" id="panel-addresses">
+        <h3>Saved Addresses</h3>
+        <div id="addresses-list"></div>
+      </div>
+
+      <div class="account-panel" id="panel-wishlist">
+        <h3>Wishlist</h3>
+        <div class="product-grid" id="wishlist-grid"></div>
+      </div>
+
+      <div class="account-panel" id="panel-preferences">
+        <h3>Size Preferences</h3>
+        <p style="color:var(--gray); margin-bottom:18px;">Save your usual sizes so future checkouts are faster.</p>
+        <div class="form-row">
+          <div class="form-group"><label>Top Size</label><select id="pref-top"><option>XS</option><option>S</option><option selected>M</option><option>L</option><option>XL</option><option>XXL</option></select></div>
+          <div class="form-group"><label>Bottom Size</label><select id="pref-bottom"><option>28</option><option selected>30</option><option>32</option><option>34</option><option>36</option></select></div>
+        </div>
+        <div class="form-group"><label>Footwear Size</label><select id="pref-shoe"><option>6</option><option>7</option><option selected>8</option><option>9</option><option>10</option><option>11</option></select></div>
+        <button class="btn btn-primary" id="save-prefs">Save Preferences</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer"><div class="container"><div class="footer-bottom">© 2026 StyleHub. All rights reserved. Built as a web development internship project.</div></div></footer>
+
+<script src="js/data.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+<script src="js/account.js"></script>
+</body>
+</html>

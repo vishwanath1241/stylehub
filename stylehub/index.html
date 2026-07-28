@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StyleHub — Trendy Fashion for Men, Women & Kids</title>
+<meta name="description" content="StyleHub — premium fashion and apparel for men, women and kids. Shop the latest collections online.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== TOPBAR ===== -->
+<div class="topbar">
+  <div class="container">
+    <span>Free shipping on orders above ₹1999</span>
+    <span>Need help? <a href="contact.html">Contact Us</a></span>
+  </div>
+</div>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="logo">Style<span>Hub</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    <nav class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="products.html?category=men">Men</a>
+      <a href="products.html?category=women">Women</a>
+      <a href="products.html?category=kids">Kids</a>
+      <a href="products.html">All Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <form class="search-box js-search-form">
+      <span>🔍</span>
+      <input type="text" placeholder="Search for products...">
+    </form>
+    <div class="nav-actions">
+      <a href="account.html?tab=wishlist" class="nav-icon">♡<span class="nav-badge js-wishlist-count">0</span></a>
+      <a href="cart.html" class="nav-icon">🛍<span class="nav-badge js-cart-count">0</span></a>
+      <a href="account.html" class="nav-icon">👤</a>
+    </div>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-copy">
+      <div class="hero-eyebrow">Autumn / Winter Edit</div>
+      <h1>Wear the <em>story</em><br>you want to tell</h1>
+      <p>Curated fashion for men, women and kids — where tailoring meets attitude. New arrivals dropped weekly.</p>
+      <div class="hero-cta">
+        <a href="products.html" class="btn btn-primary">Shop the Collection</a>
+        <a href="products.html?category=women" class="btn btn-outline" style="border-color:#fff;color:#fff;">Women's Edit →</a>
+      </div>
+    </div>
+    <div class="hero-img-wrap">
+      <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=800" alt="Fashion model wearing a curated StyleHub outfit">
+      <div class="hero-tag"><strong>4.8 / 5</strong><span>Rated by 12,000+ shoppers this season</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CATEGORIES ===== -->
+<section class="section container">
+  <div class="section-header">
+    <div class="section-eyebrow">Shop by Category</div>
+    <h2>Dressed for every chapter</h2>
+    <p>Three edits, one wardrobe philosophy — considered pieces that outlast the season.</p>
+  </div>
+  <div class="category-grid">
+    <div class="category-card">
+      <img src="https://images.unsplash.com/photo-1516257984-b1b4d707412e?w=700" alt="Men's fashion collection">
+      <div class="category-card-label"><h3>Men</h3><a href="products.html?category=men">Shop Men's →</a></div>
+    </div>
+    <div class="category-card">
+      <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=700" alt="Women's fashion collection">
+      <div class="category-card-label"><h3>Women</h3><a href="products.html?category=women">Shop Women's →</a></div>
+    </div>
+    <div class="category-card">
+      <img src="https://images.unsplash.com/photo-1519457431-44ccd64a579b?w=700" alt="Kids fashion collection">
+      <div class="category-card-label"><h3>Kids</h3><a href="products.html?category=kids">Shop Kids' →</a></div>
+    </div>
+  </div>
+</section>
+
+<div class="container"><div class="stitch stitch--wide"></div></div>
+
+<!-- ===== FEATURED PRODUCTS ===== -->
+<section class="section container">
+  <div class="section-header">
+    <div class="section-eyebrow">Featured Collection</div>
+    <h2>This week's bestsellers</h2>
+    <p>The pieces our shoppers keep coming back for.</p>
+  </div>
+  <div class="product-grid" id="featured-grid"></div>
+  <div class="text-center" style="margin-top:40px;">
+    <a href="products.html" class="btn btn-dark">View All Products</a>
+  </div>
+</section>
+
+<!-- ===== OFFER STRIP ===== -->
+<section class="offer-strip">
+  <h3>Season Sale — Up to 40% Off</h3>
+  <p>Use code <strong>STYLE10</strong> at checkout for an extra 10% off</p>
+  <div style="margin-top:20px;"><a href="products.html" class="btn btn-gold">Shop the Sale</a></div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="section container">
+  <div class="section-header">
+    <div class="section-eyebrow">Reviews</div>
+    <h2>Loved by our customers</h2>
+  </div>
+  <div class="testimonial-grid">
+    <div class="testimonial-card">
+      <div class="stars">★★★★★</div>
+      <p>"The Oxford shirt fits perfectly and the fabric feels genuinely premium. My new go-to store."</p>
+      <strong>— Arjun K., Mumbai</strong>
+    </div>
+    <div class="testimonial-card">
+      <div class="stars">★★★★★</div>
+      <p>"Ordered the satin gown for a wedding — got compliments all night. Delivery was fast too."</p>
+      <strong>— Meera S., Bengaluru</strong>
+    </div>
+    <div class="testimonial-card">
+      <div class="stars">★★★★☆</div>
+      <p>"Great range for kids' clothing that doesn't feel cheap. Sizing chart was spot on."</p>
+      <strong>— Priya N., Delhi</strong>
+    </div>
+  </div>
+</section>
+
+<!-- ===== NEWSLETTER ===== -->
+<section class="newsletter">
+  <h3>Get 10% off your first order</h3>
+  <p>Sign up for style edits, early access and seasonal offers.</p>
+  <form class="newsletter-form" onsubmit="event.preventDefault(); showToast('Thanks for subscribing! Check your inbox for your code.'); this.reset();">
+    <input type="email" placeholder="Enter your email" required>
+    <button class="btn btn-dark" type="submit">Subscribe</button>
+  </form>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="logo" style="color:#fff;">Style<span>Hub</span></a>
+        <p style="margin-top:14px; font-size:.88rem; color:#B9B9C6;">Premium fashion for men, women and kids. Designed with intention, made to last.</p>
+        <div class="social-row">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="Twitter">X</a>
+        </div>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="products.html?category=men">Men</a></li>
+          <li><a href="products.html?category=women">Women</a></li>
+          <li><a href="products.html?category=kids">Kids</a></li>
+          <li><a href="products.html">New Arrivals</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="account.html">My Account</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <ul>
+          <li><a href="contact.html">Store Locator</a></li>
+          <li><a href="checkout.html">Shipping Info</a></li>
+          <li><a href="account.html?tab=orders">Track Order</a></li>
+          <li><a href="contact.html">Size Guide</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 StyleHub. All rights reserved. Built as a web development internship project.</div>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+<script>
+  const featured = PRODUCTS.filter(p => p.tag === "Bestseller" || p.tag === "Editor's Pick").slice(0, 8);
+  document.getElementById("featured-grid").innerHTML = featured.map(renderCardHTML).join("");
+
+  function renderCardHTML(p){
+    return `
+    <div class="product-card">
+      <div class="product-thumb">
+        ${p.tag ? `<span class="product-badge">${p.tag}</span>` : ""}
+        <button class="wishlist-btn ${Store.isWishlisted(p.id) ? 'active' : ''}" onclick="toggleWish(this,'${p.id}')">♡</button>
+        <a href="product-detail.html?id=${p.id}"><img src="${p.img}" alt="${p.name}" loading="lazy"></a>
+      </div>
+      <div class="product-info">
+        <div class="product-brand">${p.brand}</div>
+        <div class="product-name"><a href="product-detail.html?id=${p.id}">${p.name}</a></div>
+        <div class="product-price">
+          <span class="price-now">${formatINR(p.price)}</span>
+          <span class="price-was">${formatINR(p.mrp)}</span>
+        </div>
+        <div class="product-rating">${starString(p.rating)} <span style="color:#6E6E80;">(${p.reviews})</span></div>
+      </div>
+    </div>`;
+  }
+  function toggleWish(btn, id){
+    const active = Store.toggleWishlist(id);
+    btn.classList.toggle("active", active);
+    showToast(active ? "Added to wishlist" : "Removed from wishlist");
+  }
+</script>
+</body>
+</html>
